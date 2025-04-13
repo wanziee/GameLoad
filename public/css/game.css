@@ -1,0 +1,96 @@
+
+    body {
+        padding: 0px;
+        margin: 0px;
+        overflow-x: hidden;
+    }
+
+    .kategori-game .container p {
+        font-size: 20px;
+        margin-bottom: 2rem;
+    }
+
+    .kategori-game {
+        margin-top: 7rem;
+        margin-bottom: 2rem;
+    }
+
+    .swiper-wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .kategori {
+        height: auto;
+        display: flex;
+        gap: 1.9rem;
+        overflow-x: auto; 
+        scrollbar-width: none; 
+        -ms-overflow-style: none; 
+        justify-content: space-between;
+    }
+
+    .kategori-card {
+        width: 100%; 
+        max-width: 248px; 
+        background-color: #272727;
+        border-radius: 7px;
+    }
+
+    .kategori-card:hover {
+        background-color: #3a3a3a;
+    }
+
+    .kategori-card .foto-kategori {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1px;
+        padding: 1.5rem; /* Padding responsif */
+    }
+
+    .kategori-card .teks-kategori {
+        display: flex;
+        padding: 0 0 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .kategori-card .teks-kategori h2 {
+        font-size: 15px;
+        font-weight: 300;
+        color: white;
+    }
+
+    .kategori-card .foto-kategori .depan {
+        position: absolute;
+        z-index: 1;
+    }
+
+    .kategori-card .foto-kategori div {
+        height: 131px;
+        width: 99px;
+    }
+
+    .kategori-card .foto-kategori div img {
+        height: 100%;
+        width: 100%;
+        border-radius: 4px;
+        object-fit: cover;
+        filter: drop-shadow(1px 1px 10px #000000);
+    }
+
+    @media screen and (max-width: 768px) {
+        .kategori {
+            flex-wrap: nowrap; /* Membuat kategori card tidak wrap di layar kecil */
+        }
+    }
+
+    @media screen and (max-width: 444px){
+        .kategori-card .foto-kategori div {
+            height: 104.8px; /* 80% dari 131px */
+            width: 79.2px;  /* 80% dari 99px */
+        }
+        
+    }

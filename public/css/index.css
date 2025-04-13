@@ -1,0 +1,663 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&family=Roboto+Slab:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "inter", sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-padding-top: 2rem;
+}
+
+body {
+    background: #121212;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+
+}
+
+.new, .trending{
+    margin-top: 2.7rem;
+}
+
+/* home */
+.home {
+    position: relative;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 7rem;
+}
+
+.home img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1.4rem;
+    z-index: -1;
+    margin-bottom: 1rem;
+}
+
+
+
+.home::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    border-radius: 1.4rem;
+    z-index: -1;
+    margin-top: -0.5rem;
+}
+
+.home-text {
+    padding-left: 4rem;
+    padding-top: 200px;
+    text-align: left;
+    height: auto;
+}
+
+.home-text p {
+    color: white;
+    margin-bottom: 2rem;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.home-text h1 {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    background: white;
+    padding: 15px 20px;
+    color: #121212;
+    text-transform: uppercase;
+    font-size: 11px;
+    border-radius: 0.2rem;
+}
+
+.btn:hover {
+    background: #0074e3;
+    color: white;
+
+}
+
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 1rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+section div p {
+    font-size: 20px;
+    font-family: 'inter' sans-serif;
+}
+
+
+
+
+
+/* game card */
+
+.new-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(197px, 1fr));
+    gap: 0.8rem;
+}
+
+.game-card {
+    position: relative;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.game-image {
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+}
+
+.game-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.game-details {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.game-title {
+    font-size: 13px;
+    font-weight: 200;
+    color: white;
+    margin: 10px 0;
+}
+
+.game-kategori {
+    font-size: 10px;
+    color: #666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* see more game */
+.game-cards {
+
+    width: 100%;
+    height: 260px;
+    border-radius: 0.5rem;
+    background: #272727;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* .game-cards:hover .seemore{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    background-color: #0074e3;
+    transition: 3s;
+} */
+
+.game-cards:hover {
+    background-color: #0074e3;
+    transition: 0.3s;
+}
+
+.pita {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+
+}
+
+.pita i {
+    margin-bottom: 0.5rem;
+    font-size: 40px;
+}
+
+.pita h2 {
+    font-size: 13px;
+}
+
+.seemore {
+    position: absolute;
+    width: 100%;
+    height: 260px;
+    background-color: #0074e3;
+    border-radius: 0.5rem;
+    clip-path: polygon(100% 78%, 70% 100%, 100% 100%);
+    transition: 3s;
+}
+
+.game-cards .arrow {
+    position: absolute;
+    font-size: 30px;
+    right: 4px;
+    bottom: 4px;
+    transform: rotate(45deg);
+    z-index: 1;
+}
+
+.game-card:hover .game-image img {
+    filter: brightness(65%);
+}
+
+
+
+
+
+
+.swiper-buttons{
+    position: absolute;
+    padding: 20;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    right: 0;
+    bottom: -9px;
+
+
+}
+
+
+
+/* Warna dan ukuran tombol */
+.swiper-button-next,
+.swiper-button-prev {
+  top: unset !important;          /* Transparansi */
+  bottom: unset !important;          /* Transparansi */
+  right: unset !important;          /* Transparansi */
+  left: unset !important;          /* Transparansi */
+  width: unset !important;          /* Transparansi */
+  position: unset !important; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+    display: none;
+}
+
+.slider-arrow{
+    padding: 5px;
+    font-size: 30px;
+    background-color: #272727;
+    border-radius: 50%;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive */
+@media (max-width:1080px) {
+.game-cards { 
+    display: none;
+}
+    .container {
+        margin: auto;
+        width: 90%;
+    }
+
+    .nav {
+        padding: 10px 0;
+    }
+
+    .notification {
+        right: 4rem;
+    }
+
+    .home {
+        position: relative;
+        min-height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 6rem !important;
+    }
+
+    .home img {
+        border-radius: 1rem;
+    }
+
+    .home::after {
+        border-radius: 1rem;
+    }
+
+    .home-text {
+        padding-left: 4rem;
+        padding-top: 75px;
+        text-align: left;
+        height: auto;
+    }
+
+    .home-text p {
+        font-size: 14px;
+    }
+
+    .home-text {
+        padding-left: 3rem;
+    }
+
+    .home-text h1 {
+        font-size: 2.3rem;
+
+    }
+    .new-content{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .kategori-card {
+        width: 100%;
+        /* Lebar kategori card 100% agar bisa responsif */
+        max-width: 200px;
+        /* Lebar maksimum kategori card */
+        background-color: #272727;
+        border-radius: 7px;
+    }
+    .trending, .new{
+        margin-top: 2.5rem;
+    }
+
+}
+
+
+
+
+@media (max-width:703px) {
+    .game-cards {
+        display: none;
+    }
+    .notification {
+        right: 1rem;
+    }
+
+    .home {
+        position: relative;
+        min-height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 6rem !important;
+    }
+
+    .home img {
+        border-radius: 0.7rem;
+    }
+
+    .home::after {
+        border-radius: 0.7rem;
+    }
+
+    .game-cards {
+        display: none;
+    }
+
+    .new-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.6rem;
+    }
+
+    .game-image {
+        width: 100%;
+        height: 220px;
+        overflow: hidden;
+    }
+
+    .home-text {
+        padding-left: 2rem;
+        padding-top: 34px;
+        text-align: left;
+        height: auto;
+    }
+
+    .home-text h1 {
+        font-size: 2.2rem;
+    }
+
+    .home-text p {
+        font-size: 13px;
+    }
+
+    .btn {
+        background: white;
+        padding: 12px 16px;
+        color: #121212;
+        text-transform: uppercase;
+        font-size: 11px;
+        border-radius: 0.2rem;
+    }
+
+    .right-container {
+        display: none;
+    }
+
+    .left-container {
+        width: 100%;
+    }
+
+    .imgcover .detailhp img {
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        object-fit: contain;
+
+    }
+
+    .logo-wrap {
+        height: 90px;
+        width: 90px;
+        padding: 10px;
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+
+    }
+
+    .imgcover .imgright {
+        border-radius: 0.2rem;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .swiper-buttons{
+        width: 90px;
+    }
+
+}
+
+
+
+
+@media (max-width:562px) {
+    .container {
+        margin: auto;
+        width: 95%;
+    }
+
+    .new-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .imgcover {
+        height: 280px;
+        overflow: hidden;
+    }
+
+    .detail {
+        padding-top: 5rem;
+        display: flex;
+        gap: 2rem;
+        position: relative;
+    }
+
+    .detail-jumlah li {
+        height: 100%;
+    }
+
+    .konfirmasi-canvas {
+        height: auto;
+        width: 90%;
+        margin-top: 2rem;
+        background-color: #272727;
+        border-radius: 0.8rem;
+        padding: 1.5rem 1.3rem;
+        position: relative;
+    }
+
+    .w {
+        text-align: end;
+    }
+    .new, .trending{
+        margin-top: 2.3rem;
+    }
+
+}
+
+
+
+
+@media (max-width:524px) {
+    .container {
+        margin: auto;
+        width: 95%;
+    }
+    .new, .trending{
+        margin-top: 2.1rem;
+    }
+
+}
+
+@media (max-width:480px) {
+    .container {
+        margin: auto;
+        width: 95%;
+    }
+
+    .metode-pembayaran {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .detail-jumlah {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .new, .trending{
+        margin-top: 2.1rem;
+    }
+
+}
+
+
+@media (max-width:444px) {
+    .home::after {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    }
+    .bawah .email,
+    .bawah .id {
+        padding: 10px 15px;
+    }
+
+    .container {
+        margin: auto;
+        width: 95%;
+    }
+
+    .game-image {
+        height: 180px;
+    }
+
+    .home {
+        justify-content: center;
+        margin-top: 6rem !important;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    .home-text h1 {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    .home-text p {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .home-text {
+        padding-left: 0;
+
+    }
+
+    .bawah {
+        margin-top: 1.2rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .pilih-jumlah,
+    .masukkan-email,
+    .masukkan-id,
+    .pilih-pembayaran,
+    .konfirmasi-pembayaran {
+        margin-top: 1.7rem;
+        margin-bottom: 1.7rem;
+    }
+
+    .bawah i {
+        display: none;
+    }
+    .new, .trending{
+        margin-top: 1.7rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .game-image {
+        height: 150px;
+    }
+
+    .game-kategori {
+        font-size: 8px;
+    }
+
+    game-details {
+        padding-top: 8px;
+    }
+
+    .game-image img {
+        border-radius: 0.2rem;
+    }
+
+    .imgcover {
+        height: 250px;
+        overflow: hidden;
+    }
+
+    .pilih-jumlah,
+    .masukkan-email,
+    .masukkan-id,
+    .pilih-pembayaran,
+    .konfirmasi-pembayaran {
+        padding: 1rem;
+    }
+}

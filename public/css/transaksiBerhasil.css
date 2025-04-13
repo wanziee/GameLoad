@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "inter", sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-padding-top: 2rem;
+}
+
+body {
+    background: #121212;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    height: 76px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+
+}
+
+.konfirmasi {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.konfirmasi-canvas {
+    height: auto;
+    width: 450px;
+    margin-top: 2rem;
+    background-color: #272727;
+    border-radius: 0.8rem;
+    padding: 2rem 2.5rem;
+    position: relative;
+}
+
+.back {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    /* Make sure it's above other elements */
+    cursor: pointer;
+}
+
+
+.back i {
+    font-size: 30px;
+    /* Adjust icon size */
+    color: white;
+}
+
+.upper-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.bank-pilihan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.bank-pilihan i {
+    font-size: 35px;
+    font-weight: 100;
+    color: rgb(107, 255, 100);
+}
+
+.img-pembayaran {
+    max-width: 100px;
+    max-height: 60px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 7px;
+}
+
+.img-pembayaran img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bank-pilihan p {
+    font-size: 13px;
+    font-weight: 200;
+    width: 100%;
+    text-align: center;
+}
+
+.bank-pilihan h2 {
+    font-weight: 300;
+}
+
+.harga-pilihan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    gap: 3px;
+}
+
+.harga-pilihan p {
+    font-size: 10px;
+    font-weight: 200;
+
+}
+
+.harga-pilihan h1 {
+    font-weight: 400;
+}
+
+.info-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.info-detail .item,
+.info-detail .harga {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.info-detail p {
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.menunggu p{
+    font-size: 10px;
+    font-weight: 200;
+}
+
+.line-sec {
+    margin-top: 1rem;
+    display: block;
+    height: 0.3px;
+    width: 100%;
+    background-color: #626262;
+}
+
+.info-billing {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.info-billing .wa {
+    display: flex;
+    justify-content: space-between;
+    gap: 9px;
+}
+
+.info-billing .wa p {
+    font-size: 12px;
+    font-weight: 200;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.info-billing .wa input {
+    width: 100%;
+    padding: 1rem 0.2rem;
+    font-weight: 200;
+    background: none;
+    border: none;
+    border-bottom: 1px white;
+}
+
+.menunggu {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.last {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.last .col {
+    gap: 5px;
+}
+
+.last .col .cols {
+    display: flex;
+    flex-direction: column;
+}
+
+.last .col .cols p {
+    justify-content: start;
+
+}
+
+.last div {
+    display: flex;
+    align-items: center;
+}
+
+.last div img {
+    height: 29px;
+    width: 25px;
+}
+
+.last div p {
+    font-size: 13px;
+    font-family: 100;
+    display: flex;
+    flex-direction: column;
+}
+
+#timer {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.button-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 2rem;
+    margin-top: 1rem;
+    border-radius: 0.3rem;
+    background-color: #0074e3;
+    border: none;
+}
+
+.buttonHome {
+    font-size: 13px;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.alert {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 350px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+    display: block;
+    z-index: 9999;
+    font-size: 16px;
+    animation: slideIn 1s ease-out, slideOut 1s ease-out 3s forwards;
+    border: 6px solid rgb(93, 232, 93);
+
+}
+
+.message-alert h4{
+    margin-bottom: 5px;
+}
+.message-alert p{
+    font-size: 12px ;
+    color: rgb(137, 137, 137);
+}
+.alert-canvas{
+    display: flex;
+}
+.check-alert{
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    font-size: 30px;
+    color:rgb(93, 232, 93) ;
+}
+
+        /* Keyframes untuk animasi muncul dari kanan */
+        @keyframes slideIn {
+            0% {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        /* Keyframes untuk animasi menghilang ke kanan */
+        @keyframes slideOut {
+            0% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+            100% {
+                transform: translateX(100%);
+                opacity: 0;
+                visibility: hidden;  /* Menghilangkan elemen dari tampilan setelah animasi */
+            }
+        }
+
+
+
+.invoice{
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+}

@@ -1,0 +1,53 @@
+.info-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vh;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    
+}
+
+
+.info h1{
+    margin-bottom: 1rem;
+    font-size:60px;
+    font-weight: bold;
+    background: linear-gradient(to bottom, rgb(216, 0, 216),rgb(159, 0, 159), black);
+    background-clip: text;
+    color: transparent;
+}
+
+.info p{
+    font-weight: 300;
+}
+.info h4{
+    margin-bottom: 0.3rem;
+    font-size: 30px;
+}
+
+@media (max-width:562px){
+    .info-box{
+        padding: 0 3%;
+    }
+    .info h1{
+        font-size: 40px;
+    }
+
+    .info h4{
+        font-size: 23px;
+    }
+
+    .info p{
+        font-size: 13px;
+    }
+}

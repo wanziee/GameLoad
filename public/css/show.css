@@ -1,0 +1,527 @@
+.detail {
+    padding-top: 7rem;
+    display: flex;
+    gap: 2rem;
+    position: relative;
+}
+
+/* left container */
+.left-container {
+    width: 68%;
+}
+
+.imgcover{
+    height: 400px;
+    position: relative;
+}
+
+
+.imgcover .imgright {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+.imgcover .detailhp img {
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    object-fit: contain;
+
+}
+.logo-wrap {
+    height: 0;
+    width: 0;
+    padding: 10px;
+    position: absolute;
+    bottom: 0px; /* Sesuaikan posisi vertical */
+    left: 0; /* Sesuaikan posisi horizontal */
+
+}
+
+.imgcover .imgright {
+    border-radius: 0.2rem;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+
+.sticky {
+    position: sticky;
+    top: 90px;
+}
+
+.right-container {
+    width: 32%;
+}
+
+
+
+
+
+
+
+
+
+.pilih-jumlah,
+.masukkan-email,
+.masukkan-id,
+.pilih-pembayaran,
+.konfirmasi-pembayaran {
+    background-color: #272727;
+    height: auto;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 0.4rem;
+}
+
+.atas {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.urutan1,
+.urutan2,
+.urutan3,
+.urutan4 {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    font-size: 14px;
+    font-weight: 200;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 50%;
+
+}
+
+.urutan-huruf {
+    font-size: 13px;
+    font-weight: 200;
+}
+
+.detail-jumlah {
+    margin-top: 1.5rem;
+    gap: 1rem;
+    display: grid;
+    cursor: pointer;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns with equal width */
+    grid-template-rows: auto;
+    /* rows will adjust height based on content */
+    gap: 1rem;
+    /* space between grid items */
+}
+
+.detail-jumlah li {
+    padding: 11px 13px;
+    border: 0.4px solid #626262;
+    justify-content: center;
+    display: flex;
+    border-radius: 0.3rem;
+    align-items: center;
+    height: 100%;
+}
+
+
+.detail-jumlah li h3{
+    font-weight: 200;
+    font-size: 15px;
+}
+.detail-jumlah li:hover {
+    background-color: #1d1d1d;
+}
+
+.detail-jumlah li.active{
+    background-color: #1d1d1d;
+    border: 0.4px solid white;
+}
+
+.bawah {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.bawah i {
+    font-size: 30px;
+    margin-right: 1rem;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;    
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 11px;
+}
+
+.bawah .email,
+.bawah .id {
+    background-color: #272727;
+    border: 0.8px solid white;
+    width: 100%;
+    border-radius: 0.3rem;
+    font-size: 13px;
+    padding: 13px 0px 13px 60px;
+    color: white;
+    font-weight: 200;
+}
+
+
+
+.detail-harga {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.hargas {
+    font-size: 25px;
+}
+
+
+
+
+
+/* pembayaran 4 */
+.metode-pembayaran {
+    margin-top: 1.5rem;
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.wrap-atas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrap {
+    padding: 5px;
+    border: 0.4px solid #5a5a5a;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.wrap:hover{
+    background-color: #1d1d1d;
+}
+
+.wrap.active{
+    background-color: #1d1d1d;
+    border: 0.5px solid white;
+}
+
+
+
+
+
+.wrap-atas img {
+    max-width: 45px;
+    max-height: 30px;
+    padding-bottom: 0.5rem;
+    border-radius: 3px;
+}
+
+.wrap-harga {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.wrap-harga p {
+    font-size: 8px;
+    font-weight: 200;
+    display: flex;
+    justify-content: end;
+}
+
+.wrap-harga h3 {
+    font-size: 13px;
+}
+
+.wrap-bawah {
+    gap: 0.2rem;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+
+
+.wrap-bawah .wrap-line {
+    display: block;
+    height: 0.4px;
+    width: 100%;
+    background-color: #626262;
+}
+
+
+.wrap-bawah p {
+    font-size: 0.7rem;
+
+}
+
+.konfirmasi-pembayaran .bawah{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.konfirmasi-pembayaran .bawah input {
+    width: 100%;
+    height: 2rem;
+    background-color: #0074e3;
+    border: none;
+    color: white;
+    border-radius: 0.3rem;
+}
+
+.konfirmasi-pembayaran .bawah input:hover {
+    background-color: #138dff;
+}
+.konfirmasi-pembayaran .bawah p{ 
+    font-size: 9px;
+    font-weight: 200;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+.middle{
+    margin: 1rem 0;
+    padding: 1rem 3rem;
+    border-radius: 0.3rem;
+
+} 
+
+.bank-konfirmasi{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+
+.bank-konfirmasi p{
+    font-weight: 200;
+    font-size: 12px;
+}
+.forimg{
+    width: 100px;
+    height: 45px;
+    background-color: #0074e3;
+    border-radius: 0.3rem;
+
+}
+
+.forimg img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.total-harga{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    gap: 0.4rem;
+}
+
+
+.total-harga .i{
+    font-size: 11px;
+    font-weight: 200;
+}
+
+.total-harga .u{
+    font-size: 35px;
+}
+
+
+
+.detail-konfirmasi{
+    padding: 0.3rem;
+    margin-top: 1.5rem;
+}
+.item-konfirmasi, .harga-konfirmasi{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+.item-konfirmasi p, .harga-konfirmasi p{
+    font-weight: 200;
+    font-size: 13px;
+}
+.underline{
+    display: block;
+    height: 0.4px;
+    width: 100%;
+    background-color: #626262;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* right-container */
+.right-container .logo-detail {
+    padding: 25px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.kategori-detail {
+    width: 100%;
+}
+
+.logo-detail img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-height:90px ;
+}
+
+.kategorii{
+    width: 80%;
+}
+
+.kategorii p {
+    background-color: #272727;
+    border-radius: 3px;
+    padding: 4px 7px;
+    font-size: 10px;
+    max-width: 100px;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.detail-game p {
+    margin-top: 1rem;
+    font-size: 13px;
+    color: white;
+    font-weight: 200;
+}
+
+
+
+.kelebihan-topup .garis .line {
+    display: block;
+    height: 0.4px;
+    width: 100%;
+    background-color: #626262;
+    margin: 1rem 0;
+}
+
+
+.kelebihan-topup {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.kelebihan-topup h3,
+p {
+    color: white;
+}
+
+
+
+.kelebihan-topup h3 {
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+
+}
+
+.kelebihan-topup p {
+    font-size: 12px;
+    font-weight: 200;
+    background-color: #272727;
+    margin-top: 0.5rem;
+    padding: 0.7rem;
+    border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS untuk menghilangkan lingkaran radio dan menyesuaikan tampilan */
+input[type="radio"].jumlah-item {
+display: none;
+}
+input[type="radio"].jumlah-harga {
+display: none;
+}

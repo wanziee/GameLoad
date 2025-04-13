@@ -1,0 +1,157 @@
+ /* General Layout */
+
+
+
+.title {
+    color: white;
+    padding: 10px 15px;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    height: 100vh;
+    width: 200px;
+    background-color: #191c24;
+    position: fixed;
+    left: 0;
+    transition: transform 0.3s ease;
+    padding-right: 20px;
+    z-index: 100;
+}
+
+.navigation{
+    padding-left: 15px;
+    margin-top: 2rem;
+    font-size: 15px;
+    color: #6c7293;
+}
+.sidebar.hidden {
+    transform: translateX(-100%);
+}
+
+/* .sidebar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    margin-right: 1rem;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+} */
+.sidebar a {
+    color: #6c7293 !important;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: block;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    position: relative;
+}
+.sidebar a.active{
+    background-color: #0f1015;
+}
+
+.sidebar a.active::before {
+    content: "";
+    width: 3px;
+    height: 100%;
+    background: #0090e7;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.sidebar a:hover {
+    background-color: #0f1015;
+}
+
+
+/* Content Styling */
+.content {
+    margin-left: 200px;
+    width: 100%;
+    transition: margin-left 0.3s ease;
+}
+.content2 {
+    margin-left: 250px;
+    width: 100%;
+    transition: margin-left 0.3s ease;
+    z-index: -12;
+}
+
+.content.full-width {
+    margin-left: 0;
+}
+
+/* Navbar */
+.navbar {
+    z-index: 1050;
+    background-color: #191c24
+}
+
+/* Hamburger Menu Styling */
+.hamburger {
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #6c7293;
+    margin-right: 10px;
+}
+
+
+.box-sidebar{
+    padding: 8px;
+    margin-right: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(108, 114, 147, 0.2);
+    border-radius: 100%;
+    text-decoration: none;
+    
+}
+.btn-link {
+    text-decoration: none !important;
+    color: rgb(255, 50, 50) !important;
+
+}
+
+
+.bxs-dashboard{
+    color: rgb(63, 137, 255);
+}
+.bxs-game{
+    color: rgb(255, 181, 43);
+}
+.bxs-user-account{
+    color: rgb(46, 255, 92);
+}
+.bxs-message-square-dots{
+    color: rgb(225, 0, 225);
+}
+.bx-log-out{
+    color: rgb(255, 55, 55);
+}
+
+
+
+
+/* Responsive Sidebar */
+@media (max-width: 1079px) {
+
+    /* .sidebar {
+        transform: translateX(-100%);
+    } */
+    .content {
+        margin-left: 0;
+    }
+
+    .sidebar.hidden {
+        transform: translateX(-100%);
+    }
+
+   
+}
