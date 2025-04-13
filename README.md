@@ -21,8 +21,6 @@
 
 ## 📸 Screenshot
 
-_Tambahkan di sini screenshot tampilan website kamu, misalnya halaman home, checkout, dsb._
-
 ## ⚙️ Instalasi
 
 1. Clone project ini
